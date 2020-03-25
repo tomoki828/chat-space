@@ -1,0 +1,33 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__contents
+      .chat-main__group-info__contents--current-group
+        %p test
+      .chat-main__group-info__contents--member-list
+        %p Member:tomoki
+    = link_to 'Edit', '#', class: "chat-main__group-info__edit-btn" 
+
+  .chat-main__message-list
+    .chat-main__message-list__contents
+      .chat-main__message-list__contents__info
+        .chat-main__message-list__contents__info--member-name
+          %p tomoki
+        .chat-main__message-list__contents__info--date-and-time
+          %p 2020/03/25(Wed) 09:10:01
+      .chat-main__message-list__contents--message
+        %p おはようございます！
+      .chat-main__message-list__contents__info
+        .chat-main__message-list__contents__info--member-name
+          %p tomoki
+        .chat-main__message-list__contents__info--date-and-time
+          %p 2020/03/25(Wed) 09:36:42
+      .chat-main__message-list__contents--message
+        %p 勉強頑張ります。
+
+  .chat-main__message-form
+    .chat-main__message-form__new-message
+      %input{:placeholder => "type a message", :type => "text", :value => "", :class => "chat-main__message-form__new-message--input-text"}
+      %label{class: "chat-main__message-form__new-message--input-image"}
+        %i.far.fa-image
+        %input{type: "file", class: "chat-main__message-form__new-message--input-image-file"}
+    %input{:placeholder => "Send", :type => "submit", :value => "Send", :class => "chat-main__message-form--submit-btn"}
