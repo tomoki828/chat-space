@@ -87,6 +87,9 @@ $color-icon: #38aef0;
         color: #999999;
         font-size: 12px;
         margin-top: 15px;
+        &--member-name {
+          display: inline;
+        }
       }
     }
     &__edit-btn {
@@ -137,19 +140,23 @@ $color-icon: #38aef0;
     display: flex;
     justify-content: space-between;
     padding: 20px 0 0 40px;
-    &__new-message {
-      width: 945px;
+    .new_message {
+      display: flex;
+      justify-content: space-between;
       position: relative;
+    &__message {
+      width: 945px;
       &--input-text {
         padding-left: 10px;
         height: 50px;
         width: 945px;
         border: none;
       }
+      &--form-mask {
+        background-color: $color-white;
+        padding:10px 10px 0 0;
+      }
       &--input-image {
-        position: absolute;
-        top: 10px;
-        right: 10px;
       }
       &--input-image-file{
         display: none;
@@ -161,7 +168,9 @@ $color-icon: #38aef0;
       background-color:$color-icon;
       color: $color-white;
       font-size: 16px;
-      margin-right: 40px;
+      position: absolute;
+      left: calc(100vw - 480px);
     }
+  }
   }
 }
