@@ -111,6 +111,7 @@ $color-icon: #38aef0;
     width: calc(100vw - 300px);
     margin-top: 100px;
     padding-top: 35px;
+    overflow: scroll;
     &__contents {
       margin-left: 40px;
       &__info {
