@@ -23,7 +23,7 @@ $(function(){
   };
 
   function buildHTML(message){
-    if ( message.content && message.image ) {
+    if ( message.image ) {
       var html =
        `<div class="chat-main__message-list__contents" data-message-id=${message.id}>
         <div class="chat-main__message-list__contents__info">
