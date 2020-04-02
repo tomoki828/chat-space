@@ -14,7 +14,7 @@ pid "#{app_path}/shared/tmp/pids/unicorn.pid"
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
 
 #ログを記録するファイルを指定
-stderr_path "#{app_path}/shared/log/unicorn.stderr.lo
+stderr_path "#{app_path}/shared/log/unicorn.stderr.log"
 stdout_path "#{app_path}/shared/log/unicorn.stdout.log"
 
 #Railsアプリケーションの応答を待つ上限時間を設定
